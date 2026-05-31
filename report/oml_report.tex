@@ -4,8 +4,8 @@
 %%%%% Logo: Hochschule HTU oder HSI, Sprache DE oder EN:
 % \newcommand{\logofilename}{FHNW_HTU_DE}
 %\newcommand{\logofilename}{FHNW_HTU_EN}
-% \newcommand{\logofilename}{FHNW_HSI_DE}
-\newcommand{\logofilename}{FHNW_HSI_EN}
+\newcommand{\logofilename}{FHNW_HSI_DE}
+% \newcommand{\logofilename}{FHNW_HSI_EN}
 %%%%%
 %%%%% Bibliographie entweder im IEEE- oder im APA-Stil:
 \usepackage[style=ieee,urldate=comp,backend=biber]{biblatex}
@@ -15,7 +15,7 @@
 											
 \title{Speedrunning NanoGPT mit Muon}  %Project Title
 \author{Report}    %Document Type => Technical Report, ...
-\date{Windisch, May 2026}               %Place and Date
+\date{Windisch, Mai 2026}               %Place and Date
 
 \begin{document}
 
@@ -37,9 +37,9 @@
 \begin{center}
 \begin{tabular}{@{}p{5cm} l}
 Student                    &    Jelle Schutter\\[2ex]
-Expert                     &    Michael Graber\\[2ex]
-Course                     &    Optimierung für Machine Learning\\[2ex]
-Degree Program             &    Data Science \& AI \\[2ex]
+Fach-Experte               &    Michael Graber\\[2ex]
+Modul                      &    Optimierung für Machine Learning\\[2ex]
+Studiengang                &    Data Science \& AI \\[2ex]
 Semester                   &    FS26\\[2ex]
 \end{tabular}
 \end{center}
@@ -66,16 +66,16 @@ Semester                   &    FS26\\[2ex]
 \tableofcontents
 \clearpage
 
-\listoffigures
-\listoftables
-\cleardoublepage
-
 %%---TEXT--------------------------------------------------------------------------------
 \pagenumbering{arabic}
 \include{sections/muon}
 \include{sections/speedrunning}
 \include{sections/resultate}
 \include{sections/zusammenfassung}
+
+
+\listoffigures
+\listoftables
 
 %%---BIBLIOGRAPHY------------------------------------------------------------------------
 {\sloppypar

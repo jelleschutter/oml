@@ -1,6 +1,6 @@
 # Speedrunning NanoGPT on SLURM with Muon
 
-This repository contains the code and report for the project "Speedrunning NanoGPT Training with Muon" for the course "Optimierung für Machine Learning" at FHNW. The project focuses on optimizing the training of NanoGPT using Muon on a SLURM cluster.
+This repository contains the code and report for the project "Speedrunning NanoGPT Training with Muon" for the course "Optimierung für Machine Learning" at FHNW. The project focuses on running the `modded-nanogpt` project on a SLURM cluster. Thanks to [@KellerJordan](https://github.com/KellerJordan/modded-nanogpt) for the modded NanoGPT implementation.
 
 ## Repository Structure
 - `run.sh`: A shell script to set up the environment and run the speedrun.

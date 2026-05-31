@@ -1,10 +1,10 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{iii}{section*.2}%
-\contentsline {section}{Tabellenverzeichnis}{iii}{section*.3}%
 \contentsline {section}{\numberline {1}Muon Optimizer}{1}{section.1}%
 \contentsline {section}{\numberline {2}NanoGPT Speedrunning}{3}{section.2}%
 \contentsline {section}{\numberline {3}Speedrunning auf dem FHNW Calculon}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}}{5}{subsection.3.1}%
+\contentsline {section}{Abbildungsverzeichnis}{6}{section*.11}%
+\contentsline {section}{Tabellenverzeichnis}{6}{section*.12}%
 \contentsline {section}{Quellenverzeichnis}{6}{section*.13}%

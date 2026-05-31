@@ -1,15 +1,15 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'oml_report.blg'
-[185] biber-MSWIN64:342> INFO - === 
-[246] Biber.pm:421> INFO - Reading 'oml_report.bcf'
-[451] Biber.pm:1002> INFO - Found 3 citekeys in bib section 0
-[476] Biber.pm:4487> INFO - Processing section 0
-[500] Biber.pm:4678> INFO - Looking for bibtex file 'literature/quellen.bib' for section 0
-[583] bibtex.pm:1713> INFO - LaTeX decoding ...
-[607] bibtex.pm:1519> INFO - Found BibTeX data source 'literature/quellen.bib'
-[718] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[718] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[718] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[718] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
-[732] bbl.pm:676> INFO - Writing 'oml_report.bbl' with encoding 'UTF-8'
-[739] bbl.pm:779> INFO - Output to oml_report.bbl
+[154] biber-MSWIN64:342> INFO - === 
+[220] Biber.pm:421> INFO - Reading 'oml_report.bcf'
+[366] Biber.pm:1002> INFO - Found 3 citekeys in bib section 0
+[385] Biber.pm:4487> INFO - Processing section 0
+[401] Biber.pm:4678> INFO - Looking for bibtex file 'literature/quellen.bib' for section 0
+[496] bibtex.pm:1713> INFO - LaTeX decoding ...
+[507] bibtex.pm:1519> INFO - Found BibTeX data source 'literature/quellen.bib'
+[586] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[586] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[586] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[586] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
+[596] bbl.pm:676> INFO - Writing 'oml_report.bbl' with encoding 'UTF-8'
+[599] bbl.pm:779> INFO - Output to oml_report.bbl

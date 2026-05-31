@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.6)  31 MAY 2026 23:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.6)  31 MAY 2026 23:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1173,11 +1173,11 @@ Package biblatex Info: ... file 'oml_report.bbl' found.
  (./oml_report.bbl)
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
-<./graphics/FHNW_HSI_EN.pdf, id=35, 297.19029pt x 28.4523pt>
-File: ./graphics/FHNW_HSI_EN.pdf Graphic file (type pdf)
-<use ./graphics/FHNW_HSI_EN.pdf>
-Package pdftex.def Info: ./graphics/FHNW_HSI_EN.pdf  used on input line 27.
-(pdftex.def)             Requested size: 356.66737pt x 34.1433pt.
+<./graphics/FHNW_HSI_DE.pdf, id=35, 183.81773pt x 28.4543pt>
+File: ./graphics/FHNW_HSI_DE.pdf Graphic file (type pdf)
+<use ./graphics/FHNW_HSI_DE.pdf>
+Package pdftex.def Info: ./graphics/FHNW_HSI_DE.pdf  used on input line 27.
+(pdftex.def)             Requested size: 220.57736pt x 34.1433pt.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 27.
  (c:/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1204,7 +1204,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 38.
  [1
 
-{c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./graphics/FHNW_HSI_EN.pdf>]
+{c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./graphics/FHNW_HSI_DE.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 66.
  (c:/texlive/2026/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1216,23 +1216,11 @@ Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 67.
  [2
 
-] (./oml_report.lof)
-\tf@lof=\write7
-\openout7 = `oml_report.lof'.
-
- (./oml_report.lot)
-\tf@lot=\write8
-\openout8 = `oml_report.lot'.
-
- [3
-
-] [4
-
 ]
 \openout2 = `sections/muon.aux'.
 
  (./sections/muon.tex
-<./graphics/muon_algo.png, id=78, 614.79688pt x 341.275pt>
+<./graphics/muon_algo.png, id=64, 614.79688pt x 341.275pt>
 File: ./graphics/muon_algo.png Graphic file (type png)
 <use ./graphics/muon_algo.png>
 Package pdftex.def Info: ./graphics/muon_algo.png  used on input line 11.
@@ -1247,6 +1235,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 34
 (c:/texlive/2026/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
+
 
 {c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./graphics/muon_algo.png>]) [2]
 \openout2 = `sections/speedrunning.aux'.
@@ -1271,7 +1260,15 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 No file sections/zusammenfassung.tex.
-[6
+(./oml_report.lof)
+\tf@lof=\write7
+\openout7 = `oml_report.lof'.
+
+ (./oml_report.lot)
+\tf@lot=\write8
+\openout8 = `oml_report.lot'.
+
+ [6
 
 
 
@@ -1283,24 +1280,24 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `oml_report.out' has not changed.
-(rerunfilecheck)             Checksum: 2E17A0701F455A86C7CE1719CC3A7186;1029.
+(rerunfilecheck)             Checksum: 29463FA29C8F54C9A46AB4502F2005EF;1031.
 Package logreq Info: Writing requests to 'oml_report.run.xml'.
 \openout1 = `oml_report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39515 strings out of 467349
- 803724 string characters out of 5419863
- 1723667 words of memory out of 5000000
+ 39513 strings out of 467349
+ 803711 string characters out of 5419863
+ 1723665 words of memory out of 5000000
  67927 multiletter control sequences out of 15000+600000
  690153 words of font info for 72 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  104i,10n,111p,1228b,2738s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on oml_report.pdf (10 pages, 372346 bytes).
+Output written on oml_report.pdf (8 pages, 369895 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
  79 words of extra memory for PDF output out of 10000 (max. 10000000)
 
