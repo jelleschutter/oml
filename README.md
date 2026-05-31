@@ -4,7 +4,7 @@ This repository contains the code and report for the project "Speedrunning NanoG
 
 ## Repository Structure
 - `run.sh`: A shell script to set up the environment and run the speedrun.
-- `report/`: Contains the LaTeX template and the final report.
+- `report/`: Contains the LaTeX template and the final report. [Report](report/oml_report.pdf)
 - `src/`: Contains SLURM job scripts for running the speedrun.
 
 ## Getting Started
