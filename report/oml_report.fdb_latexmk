@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber oml_report"] 1780263701.50433 "oml_report.bcf" "oml_report.bbl" "oml_report" 1780263884.55957 0
+["biber oml_report"] 1780263701.50433 "oml_report.bcf" "oml_report.bbl" "oml_report" 1780264507.15154 0
   "literature/quellen.bib" 1780233540 966 fa25559b5b9f21cfcd2b8e5ee49ef8b4 ""
-  "oml_report.bcf" 1780263884 110937 d2e4f5de458f300199c30db125c0d92b "pdflatex"
+  "oml_report.bcf" 1780264506 110937 d2e4f5de458f300199c30db125c0d92b "pdflatex"
   (generated)
   "oml_report.bbl"
   "oml_report.blg"
   (rewritten before read)
-["pdflatex"] 1780263880.77964 "c:/Users/jelle/Documents/FHNW/oml/report/oml_report.tex" "oml_report.pdf" "oml_report" 1780263884.56079 0
-  "c:/Users/jelle/Documents/FHNW/oml/report/oml_report.tex" 1780263710 3219 16addf283e44aa8c303e65879928f9dc ""
+["pdflatex"] 1780264503.82961 "c:/Users/jelle/Documents/FHNW/oml/report/oml_report.tex" "oml_report.pdf" "oml_report" 1780264507.15278 0
+  "c:/Users/jelle/Documents/FHNW/oml/report/oml_report.tex" 1780264439 3183 8f633df1796a8b0d2f2f7fd810153e91 ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1778059926 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1778059926 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1778059926 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -253,22 +253,20 @@
   "fhnwreport.cls" 1732616410 6398 9e23193f5e7e35e16db58498a0a680a3 ""
   "graphics/FHNW_HSI_DE.pdf" 1732710037 41408 1345b0cc9930e3077706d309c7a63ab0 ""
   "graphics/muon_algo.png" 1780237522 121725 65ca6cf33198bd32eefce71b5b65bea8 ""
-  "oml_report.aux" 1780263884 4527 383188456939bbfc08b4de6163038c5e "pdflatex"
+  "oml_report.aux" 1780264506 4489 e4d6ad15f9fd3726524a4e49f6e6edcf "pdflatex"
   "oml_report.bbl" 1780263704 6853 4ebdfa9d64e00a234ecb1ee39ad5ea55 "biber oml_report"
-  "oml_report.lof" 1780263884 232 3fbd357e176064fc11f293eff4e5e21a "pdflatex"
-  "oml_report.lot" 1780263884 225 30615b0b061073d6c744b3f533463e91 "pdflatex"
-  "oml_report.out" 1780263884 1031 29463fa29c8f54c9a46ab4502f2005ef "pdflatex"
-  "oml_report.run.xml" 1780263884 2513 12744d24afe0834f9467bbb9a4dc4b7b "pdflatex"
-  "oml_report.tex" 1780263710 3219 16addf283e44aa8c303e65879928f9dc ""
-  "oml_report.toc" 1780263884 579 41a46c155e50c86625bfa62fd0d70d1b "pdflatex"
-  "sections/muon.aux" 1780263883 4348 097640833ebdd4fd00d60838c8d0f327 "pdflatex"
+  "oml_report.lof" 1780264506 232 3fbd357e176064fc11f293eff4e5e21a "pdflatex"
+  "oml_report.lot" 1780264506 225 a23530adadeec72888c295ce1c2c7582 "pdflatex"
+  "oml_report.out" 1780264506 951 5f866cdbadf6378b8e3631d060866e0b "pdflatex"
+  "oml_report.run.xml" 1780264506 2513 12744d24afe0834f9467bbb9a4dc4b7b "pdflatex"
+  "oml_report.tex" 1780264439 3183 8f633df1796a8b0d2f2f7fd810153e91 ""
+  "oml_report.toc" 1780264506 513 20beefb29efa44f1bba9ee8bd9d599b2 "pdflatex"
+  "sections/muon.aux" 1780264506 4348 097640833ebdd4fd00d60838c8d0f327 "pdflatex"
   "sections/muon.tex" 1780263039 3394 45b8897eb47814c0ad1ba24f465af018 ""
-  "sections/resultate.aux" 1780263884 4648 2113ed1e571822049566bd1ca21b8d0e "pdflatex"
-  "sections/resultate.tex" 1780263142 2937 c562f5ad0540144c50627af2e0eb6dd0 ""
-  "sections/speedrunning.aux" 1780263884 4179 8a8ce0a99ae0ac1193e6a683d1056ecc "pdflatex"
-  "sections/speedrunning.tex" 1780263879 5485 13aa7437b3e1a7ba31e05aa5826202a5 ""
-  "sections/zusammenfassung.aux" 1780263884 4065 b98a26c34cb37b9c8e2de51a5548b186 "pdflatex"
-  "sections/zusammenfassung.tex" 0 -1 0 ""
+  "sections/resultate.aux" 1780264506 4541 98eee3b5cae064ebbef51bcf2b8c1b62 "pdflatex"
+  "sections/resultate.tex" 1780264498 2948 c8937f508dbb99b8309e31d9bbcadb8c ""
+  "sections/speedrunning.aux" 1780264506 4179 8a8ce0a99ae0ac1193e6a683d1056ecc "pdflatex"
+  "sections/speedrunning.tex" 1780263911 5485 13aa7437b3e1a7ba31e05aa5826202a5 ""
   (generated)
   "oml_report.aux"
   "oml_report.bcf"
@@ -282,5 +280,4 @@
   "sections/muon.aux"
   "sections/resultate.aux"
   "sections/speedrunning.aux"
-  "sections/zusammenfassung.aux"
   (rewritten before read)

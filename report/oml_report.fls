@@ -381,9 +381,6 @@ INPUT sections/speedrunning.aux
 INPUT ./sections/resultate.aux
 INPUT ./sections/resultate.aux
 INPUT sections/resultate.aux
-INPUT ./sections/zusammenfassung.aux
-INPUT ./sections/zusammenfassung.aux
-INPUT sections/zusammenfassung.aux
 OUTPUT oml_report.aux
 INPUT c:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -509,7 +506,6 @@ OUTPUT sections/resultate.aux
 INPUT ./sections/resultate.tex
 INPUT ./sections/resultate.tex
 INPUT sections/resultate.tex
-OUTPUT sections/zusammenfassung.aux
 INPUT ./oml_report.lof
 INPUT ./oml_report.lof
 INPUT oml_report.lof
@@ -528,9 +524,6 @@ INPUT sections/speedrunning.aux
 INPUT ./sections/resultate.aux
 INPUT ./sections/resultate.aux
 INPUT sections/resultate.aux
-INPUT ./sections/zusammenfassung.aux
-INPUT ./sections/zusammenfassung.aux
-INPUT sections/zusammenfassung.aux
 INPUT ./oml_report.out
 INPUT ./oml_report.out
 INPUT oml_report.run.xml
