@@ -1,0 +1,180 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{keller_muon_2024}{misc}{}{}
+      \name{author}{7}{}{%
+        {{hash=b7cea168d7f8507a65b724c70ec02c69}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Keller},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0909dbb2d418ed3a52214965770f90c}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Yuchen},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4c24f185afccc073f9cf7eabb21e714d}{%
+           family={Boza},
+           familyi={B\bibinitperiod},
+           given={Vlado},
+           giveni={V\bibinitperiod}}}%
+        {{hash=4315ad45d24f3238896b6a6088f243bc}{%
+           family={Jiacheng},
+           familyi={J\bibinitperiod},
+           given={You},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7a4b2e1890286cd7add4ace77f25ac69}{%
+           family={Cesista},
+           familyi={C\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+        {{hash=72e88de09075797dba09c21fe95dcf48}{%
+           family={Newhouse},
+           familyi={N\bibinitperiod},
+           given={Laker},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ace0098662f7a6b41db48aa2d2bf2584}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d2ca599070f5c5ad50cdea07da792ef}
+      \strng{fullhash}{230aa915c96b7928999a85b98da9519f}
+      \strng{fullhashraw}{230aa915c96b7928999a85b98da9519f}
+      \strng{bibnamehash}{8d2ca599070f5c5ad50cdea07da792ef}
+      \strng{authorbibnamehash}{8d2ca599070f5c5ad50cdea07da792ef}
+      \strng{authornamehash}{8d2ca599070f5c5ad50cdea07da792ef}
+      \strng{authorfullhash}{230aa915c96b7928999a85b98da9519f}
+      \strng{authorfullhashraw}{230aa915c96b7928999a85b98da9519f}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Muon: An optimizer for hidden layers in neural networks}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://kellerjordan.github.io/posts/muon/
+      \endverb
+      \verb{url}
+      \verb https://kellerjordan.github.io/posts/muon/
+      \endverb
+    \endentry
+    \entry{srivastava_muon_2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=3210a64f954d7bea4dca524c59f64205}{%
+           family={Varun},
+           familyi={V\bibinitperiod},
+           given={Srivastava},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{3210a64f954d7bea4dca524c59f64205}
+      \strng{fullhash}{3210a64f954d7bea4dca524c59f64205}
+      \strng{fullhashraw}{3210a64f954d7bea4dca524c59f64205}
+      \strng{bibnamehash}{3210a64f954d7bea4dca524c59f64205}
+      \strng{authorbibnamehash}{3210a64f954d7bea4dca524c59f64205}
+      \strng{authornamehash}{3210a64f954d7bea4dca524c59f64205}
+      \strng{authorfullhash}{3210a64f954d7bea4dca524c59f64205}
+      \strng{authorfullhashraw}{3210a64f954d7bea4dca524c59f64205}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Muon in Modded NanoGPT}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://varunneal.github.io/essays/muon
+      \endverb
+      \verb{url}
+      \verb https://varunneal.github.io/essays/muon
+      \endverb
+    \endentry
+    \entry{keller_modded_nanogpt_2024}{misc}{}{}
+      \name{author}{9}{}{%
+        {{hash=b7cea168d7f8507a65b724c70ec02c69}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Keller},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ace0098662f7a6b41db48aa2d2bf2584}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=040d6864c7ab72ef9dda352e24dad2b6}{%
+           family={Rappazzo},
+           familyi={R\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ceb3a91d851ee77abf94bc40adeb78e1}{%
+           family={@fernbear.bsky.social},
+           familyi={@\bibinitperiod}}}%
+        {{hash=21b039c67b3377d3681da5891c774cc8}{%
+           family={Vlado},
+           familyi={V\bibinitperiod},
+           given={Boza},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4315ad45d24f3238896b6a6088f243bc}{%
+           family={Jiacheng},
+           familyi={J\bibinitperiod},
+           given={You},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7a4b2e1890286cd7add4ace77f25ac69}{%
+           family={Cesista},
+           familyi={C\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4d41dc26e34cda78272ddf4abb66c330}{%
+           family={Koszarsky},
+           familyi={K\bibinitperiod},
+           given={Braden},
+           giveni={B\bibinitperiod}}}%
+        {{hash=216e16f52b3f532037bc18c9454054ca}{%
+           family={@Grad62304977},
+           familyi={@\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d2ca599070f5c5ad50cdea07da792ef}
+      \strng{fullhash}{88dd787a5060cdad6a792f558f3bd2a7}
+      \strng{fullhashraw}{88dd787a5060cdad6a792f558f3bd2a7}
+      \strng{bibnamehash}{8d2ca599070f5c5ad50cdea07da792ef}
+      \strng{authorbibnamehash}{8d2ca599070f5c5ad50cdea07da792ef}
+      \strng{authornamehash}{8d2ca599070f5c5ad50cdea07da792ef}
+      \strng{authorfullhash}{88dd787a5060cdad6a792f558f3bd2a7}
+      \strng{authorfullhashraw}{88dd787a5060cdad6a792f558f3bd2a7}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{modded-nanogpt: Speedrunning the NanoGPT baseline}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://github.com/KellerJordan/modded-nanogpt
+      \endverb
+      \verb{url}
+      \verb https://github.com/KellerJordan/modded-nanogpt
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

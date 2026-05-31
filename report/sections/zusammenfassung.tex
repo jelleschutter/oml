@@ -1,0 +1,8 @@
+\section{Zusammenfassung}
+
+Der Muon-Optimizer ist ein eleganter Ansatz, der durch Orthogonalisierung des Gradientupdates eine schnellere und gleichmässigere Konvergenz erzielt als AdamW.
+In Kombination mit weiteren Architektur- und Trainingsoptimierungen ermöglicht er im NanoGPT-Speedrunning-Wettbewerb deutlich kürzere Trainingszeiten.
+
+Die Reproduktion an der FHNW zeigt, dass der Speedrun problemlos auf einer H200-GPU in rund 10 Minuten abgeschlossen werden kann.
+Zwei GPUs halbieren die Zeit erwartungsgemäss auf ca.\ 5 Minuten.
+Eine einfache Verdopplung der Batch-Grösse lohnt sich nicht: der theoretische Parallelisierungsgewinn wird durch die langsamere Konvergenz aufgewogen, was die Gesamtlaufzeit fast wieder auf das Ein-GPU-Niveau bringt.

@@ -1,0 +1,33 @@
+\section{Speedrunning auf dem FHNW Calculon}
+Für die Experimente zum NanoGPT-Speedrun wurde die FHNW-Calculon-Clusterinfrastruktur genutzt, welches zwei Nodes mit je 4 H200-GPUs bietet. Alle Experimente wurden mit der Modded-NanoGPT Codebasis von Jordan Keller \cite{keller_modded_nanogpt_2024} durchgeführt.
+
+\subsection*{Setup und Konfiguration}
+Zuerst wurde versucht das offizielle Docker Image von Jordan Keller zu verwenden, in dem es zu einem Singularity Container umgewandelt wurde. Leider gab es dabei verschiedene Probleme, weshalb schlussendlich die Codebasis direkt auf dem Cluster installiert und ausgeführt wurde. Als einzige Änderung zur Originalcodebasis wurde das Package \texttt{kernels} auf Version 0.12 festgelegt, da die Hugging Face API in der aktuelleren Version nicht mit dem Projekt kompatibel war.
+
+\subsection{}
+Leider konnte nur eine limitierte Anzahl von Experimenten durchgeführt werden, da die Cluster-Ressourcen stark gefragt sind. (Die warte Zeit für 4 GPUs war mehr als eine Woche.) Daher wurden nur die folgenden zwei Konfigurationen getestet werden:
+
+\begin{itemize}
+    \item Training mit einer GPU (Baseline).
+    \item Training mit zwei GPUs (Multi-GPU).
+\end{itemize}
+
+Die Rekordzeiten von etwa 1,4 Minuten wurden mit nur zwei H200-GPUs nicht erreicht, aber die Ergebnisse zeigen dennoch, dass mit zwei GPUs auch schon eine deutliche Beschleunigung möglich ist. Die folgende Tabelle fasst die gemessenen Trainingszeiten für verschiedene Konfigurationen zusammen:
+
+\begin{table}[h]
+\centering
+\caption{Trainingszeiten des NanoGPT-Speedruns auf FHNW H200-GPUs}
+\label{tab:results}
+\begin{tabular}{lrr}
+\hline
+\textbf{Konfiguration} & \textbf{Dauer (ms)} & \textbf{Dauer (min)} \\
+\hline
+1 H200                        & 630\,917 & $\approx 10{,}5$ \\
+2 H200                        & 319\,728 & $\approx 5{,}3$ \\
+\hline
+\end{tabular}
+\end{table}
+
+Der Übergang von einer auf zwei GPUs ergibt einen Speedup von \(\approx 1{,}97\times\). Die Trainingszeit von etwa 5,3 Minuten mit zwei GPUs liegt zwar deutlich über den Rekordzeiten von 1,4 Minuten, zeigt aber dennoch eine signifikante Verbesserung gegenüber der Ein-GPU-Konfiguration. Es ist wahrscheinlich, dass weitere Optimierungen und die Nutzung aller vier GPUs zu noch schnelleren Trainingszeiten führen könnten.
+
+Möglicherweise könnten auch die anderen 4 GPUs des Clusters noch genutzt werden, um die Trainingszeit weiter zu reduzieren. Hierfür wäre es jedoch notwendig, die Codebasis entsprechend anzupassen, damit der Code auch auf mehreren Nodes laufen kann.

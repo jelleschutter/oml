@@ -1,0 +1,49 @@
+\section{Muon Optimizer}
+
+Muon (\emph{MomentUm Orthogonalized by Newton-Schulz}) ist ein von Jordan Keller entwickelter Optimizer für Hidden Layers in neuronalen Netzwerken \cite{keller_muon_2024}.
+Die Grundidee: Statt die Aktualisierungen der Gewichte vom SGD-Momentum direkt anzuwenden, wendet Muon eine Orthogonalisierung an \cite{keller_muon_2024}.
+
+\subsection*{Algorithmus}
+
+Der Muon Algorithmus besteht aus den folgenden Schritten:
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{muon_algo.png}
+    \captionof{figure}{Der Muon-Algorithmus \cite{keller_muon_2024}}
+\end{center}
+
+In jedem Schritt $t$ wird zuerst der Gradient $G_t$ berechnet (Zeile 3).
+Daraus wird wie bei SGD ein Momentum-Puffer $B_t = \mu B_{t-1} + G_t$ gebildet, der die früheren Gradienten mit dem Faktor $\mu$ gewichtet (Zeile 4).
+
+Der entscheidende Schritt ist danach die Orthogonalisierung $O_t = \mathrm{NewtonSchulz5}(B_t)$ (Zeile 5): $B_t$ wird durch die aproxximierte Orthogonal-Matrix ersetzt \cite{keller_muon_2024}.
+Formal ist das die Operation $U V^\top$, wobei $B_t = U S V^\top$ die Singulärwertzerlegung (SVD) von $B_t$ ist.
+
+Zum Schluss werden die Gewichte mit der Lernrate $\eta$ aktualisiert: $\theta_t = \theta_{t-1} - \eta\, O_t$ (Zeile 6).
+
+\subsection*{Newton-Schulz}
+
+Die Newton-Schulz-Iteration ist eines der KernstückeKernkonzepte von Muon, welche die Orthogonalisierung effizienter macht.
+Dies ist möglich durch die wiederholte Matrixmultiplikationen mit der folgenden Formel \cite{keller_muon_2024}:
+
+\begin{equation}
+    X_{k+1} = a\,X_k + (b\,X_k X_k^\top + c\,(X_k X_k^\top)^2)\,X_k
+\end{equation}
+
+mit ursprünglich den Koeffizienten $(a, b, c) = (3.4445,\; -4.7750,\; 2.0315)$.
+Nach typischerweise 5 Schritten konvergiert $X_k$ gegen $UV^\top$.
+Gemäss Keller \cite{keller_muon_2024} konnte dies effizient und stabil in \texttt{bfloat16} durchgeführt werden, was schlussendlich ein Vorteil gegenüber anderen Orthogonalisierungsverfahren war.
+
+Übrigens werden die Koeffizienten $a, b, c$ nicht mehr fix verwendet, sondern werden in jedem Schritt so optimiert, dass die Konvergenz beschleunigt wird \cite{srivastava_muon_2024}.
+
+\subsection*{Warum Orthogonalisierung hilft}
+
+Die Update-Matrizen in Neuralen Netzwerken werden meist von wenigen starken Richtungen dominiert, während viele andere Richtungen nur sehr kleine Werte haben \cite{keller_muon_2024}.
+Ohne Gegenmassnahme folgt der Optimizer fast nur diesen wenigen starken Richtungen, und die vielen schwachen Richtungen werden kaum gelernt.
+
+Genau hier setzt die Orthogonalisierung an: Sie bringt alle Richtungen auf die gleiche Stärke \cite{keller_muon_2024}.
+Dadurch erhalten auch die schwachen, aber durchaus auch nützlichen Richtungen einen gleich grossen Lernschritt, und das Modell nutzt die Information im Gradienten besser aus.
+
+\subsection*{Rechenaufwand vs. Nutzen}
+
+Der Mehraufwand durch die Newton-Schulz-Iteration gegenüber dem Standard SGD-Momentum ohne Orthogonalisierung ist klein. Die zusätzlichen Matrixmultiplikationen können effizient auf der GPU durchgeführt werden \cite{keller_muon_2024}. Für den NanoGPT-Speedrun mit $768$ Dimensionen und einer Batch-Size von $524\,288$ ergaben Tests nur einen $\mathbf{0.7\%}$ Overhead während die Anzahl der benötigten Iterationen signifikant reduziert wurde \cite{keller_muon_2024}.
+

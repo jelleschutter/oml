@@ -1,0 +1,62 @@
+\section{NanoGPT Speedrunning}
+
+Das Modded-NanoGPT Projekt möchte das Training von NanoGPT in so kurzer Zeit wie möglich erreichen. Die Zeit stoppt wenn der Validierungs-Loss von 3.28 erreicht wird \cite{keller_modded_nanogpt_2024}.
+Seit dem Start des Projekts ist die Trainingszeit von über 45 Minuten (Mai 2024) auf etwa 1,4 Minuten gesunken \cite{keller_modded_nanogpt_2024}.
+
+\subsection*{Optimierungen}
+
+Um diese Rekord-Zeiten zu erreichen, wurden viele Optimierungen am Modell, dem Training und der Hardware-Auslastung vorgenommen. Die wichtigsten davon werden im Folgenden vorgestellt.
+
+\paragraph{Muon als zentraler Optimizer}
+Der grösste Gewinn kommt vom Wechsel von AdamW zu Muon für die Attention- und MLP-Gewichte im Transformer \cite{keller_modded_nanogpt_2024}.
+Embedding- und Output-Layer bleiben bei AdamW \cite{keller_muon_2024}.
+Seit der Einführung von Muon am 15. Oktober 2024 wurden alle Rekorde damit erzielt \cite{keller_muon_2024}.
+
+\paragraph{Architektur}
+Auch am Modell selbst wurde geschraubt. Mehrere bewährte Bausteine moderner Sprachmodelle ersetzen die ursprünglichen Komponenten von GPT-2:
+\begin{itemize}
+    \item \textbf{RoPE} (Rotary Positional Embeddings) statt gelernter Positionskodierungen \cite{keller_modded_nanogpt_2024}.
+    \item \textbf{Value-Embeddings}: zusätzliche Embeddings, die in die Values der Attention-Schichten gemischt werden \cite{keller_modded_nanogpt_2024}.
+    \item \textbf{$\mathrm{ReLU}^2$-Aktivierungen} statt GELU in den Feed-Forward-Schichten \cite{keller_modded_nanogpt_2024}.
+    \item Keine Bias-Parameter \cite{keller_modded_nanogpt_2024}.
+\end{itemize}
+
+\paragraph{Trainingseffizienz}
+Neben dem Modell wurde vor allem an der Hardware-Auslastung gefeilt, damit jede GPU-Sekunde möglichst viel Rechenarbeit erledigt:
+\begin{itemize}
+    \item \textbf{FlashAttention} senkt den Speicher- und Rechenaufwand der Attention-Berechnung \cite{keller_modded_nanogpt_2024}.
+    \item \textbf{BF16 Mixed-Precision} und \textbf{torch.compile} nutzen die GPU besser aus \cite{keller_modded_nanogpt_2024}.
+    \item \textbf{Distributed Data Parallel (DDP)} für Multi-GPU-Training \cite{keller_modded_nanogpt_2024}.
+\end{itemize}
+
+\subsection*{Feinabstimmung von Muon}
+
+Über den reinen Wechsel zu Muon hinaus wurde der Optimizer selbst weiter verbessert.
+Die folgenden vier Anpassungen brachten je rund ein bis zwei Prozent kürzere Trainingszeit \cite{srivastava_muon_2024}.
+
+\paragraph{NorMuon (adaptives Muon)}
+Adam gibt jedem Parameter eine eigene Lernrate, indem es den Gradienten durch seine geschätzte Schwankung teilt. Das dämpft verrauschte Gradienten und bremst in stark gekrümmten Bereichen der Loss-Landschaft \cite{srivastava_muon_2024}.
+Muon profitiert nicht von dieser Normalisierung pro Eintrag, weil sie die orthogonalisierte Struktur des Updates zerstören würde \cite{srivastava_muon_2024}.
+NorMuon ist ein Mittelweg: Es normalisiert nur entlang einer Achse und stellt danach die ursprüngliche Stärke des Updates wieder her. Zusammen mit angepasster Lernrate brachte das rund 2\,\% \cite{srivastava_muon_2024}.
+
+\paragraph{Batch-Size-Scheduling}
+Kleine Batches sind token-effizienter (jeder Token liefert mehr Signal), grosse Batches sind schneller pro Token, da die GPU über die Batch-Dimension parallelisiert \cite{srivastava_muon_2024}.
+Muon verträgt grössere Batches als Adam, ohne Token zu verschwenden \cite{srivastava_muon_2024}.
+Praktisch heisst das: Die Batch-Grösse wird während des Trainings schrittweise erhöht. Anfangs lernt das Modell häufige Muster, für die schon kleine Batches reichen; später folgen seltene Muster, die auch bei grossen Batches verrauscht bleiben. Das sparte rund 1,7\,\% \cite{srivastava_muon_2024}.
+
+\paragraph{Polar Express (schnellere Orthogonalisierung)}
+Die Orthogonalisierung ist das Herzstück von Muon. Die Standard-Newton-Schulz-Iteration verwendet feste Koeffizienten und ignoriert den Zustand der jeweiligen Matrix \cite{srivastava_muon_2024}.
+Polar Express sucht stattdessen die optimalen Koeffizienten für jeden einzelnen Iterationsschritt und konvergiert dadurch schneller. Eine genauere Orthogonalisierung erlaubt zudem eine höhere Lernrate und stabileres Training, was einen neuen Rekord ergab \cite{srivastava_muon_2024}.
+
+\paragraph{Cautious Weight Decay}
+Weight Decay hält die Gewichte davon ab, zu gross zu werden. Beim kleinen Modded-NanoGPT schadete das Standardverfahren jedoch \cite{srivastava_muon_2024}.
+Cautious Weight Decay verkleinert nur die Parameter, die sich im Update ohnehin in diese Richtung bewegen, und arbeitet so nicht gegen den Optimizer. Das brachte rund 1,3\,\%, und die finalen Gewichte waren etwa 15\,\% kleiner \cite{srivastava_muon_2024}.
+
+\subsection*{Verteilte Berechnung}
+
+Damit Muon auch auf mehreren GPUs schnell läuft, kommen mehrere Engineering-Tricks zum Einsatz \cite{srivastava_muon_2024}:
+\begin{itemize}
+    \item Parameter gleicher Form werden gestapelt, damit die Orthogonalisierung gebündelt (vektorisiert) abläuft. Attention-Gewichte werden dafür passend zu den MLP-Schichten zusammengefasst \cite{srivastava_muon_2024}.
+    \item Eigene Triton-Kernels nutzen die symmetrische Struktur der Newton-Schulz-Matrizen aus und halbieren so etwa die Rechenarbeit \cite{srivastava_muon_2024}.
+    \item Jede GPU erhält einen gleich grossen Teil der Gradienten. Die Kommunikation zwischen den GPUs läuft asynchron parallel zur Berechnung innerhalb der GPUs \cite{srivastava_muon_2024}.
+\end{itemize}

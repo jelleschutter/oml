@@ -1,0 +1,98 @@
+\documentclass[final]{fhnwreport}         %[mode] = draft or final
+\input{fhnwheader}                        %loads all packages, definitions and settings	
+
+%%%%% Logo: Hochschule HTU oder HSI, Sprache DE oder EN:
+% \newcommand{\logofilename}{FHNW_HTU_DE}
+%\newcommand{\logofilename}{FHNW_HTU_EN}
+% \newcommand{\logofilename}{FHNW_HSI_DE}
+\newcommand{\logofilename}{FHNW_HSI_EN}
+%%%%%
+%%%%% Bibliographie entweder im IEEE- oder im APA-Stil:
+\usepackage[style=ieee,urldate=comp,backend=biber]{biblatex}
+%\usepackage[style=apa,urldate=comp,backend=biber]{biblatex}
+%%%%%
+\addbibresource{literature/quellen.bib}
+											
+\title{Speedrunning NanoGPT mit Muon}  %Project Title
+\author{Report}    %Document Type => Technical Report, ...
+\date{Windisch, May 2026}               %Place and Date
+
+\begin{document}
+
+\pagenumbering{roman}	
+
+%%---TITLEPAGE---------------------------------------------------------------------------
+\selectlanguage{ngerman}                  %ngerman or english
+\maketitle
+
+% \vfill
+
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=\linewidth]{titleimage.png}
+% \end{figure}
+
+\vspace*{10ex}
+
+\begin{center}
+\begin{tabular}{@{}p{5cm} l}
+Student                    &    Jelle Schutter\\[2ex]
+Expert                     &    Michael Graber\\[2ex]
+Course                     &    Optimierung für Machine Learning\\[2ex]
+Degree Program             &    Data Science \& AI \\[2ex]
+Semester                   &    FS26\\[2ex]
+\end{tabular}
+\end{center}
+
+
+% The terms to be used in an English report are: Student, Expert, Supervisor, Client, Study Program, Project Number, Agreement.
+
+\vspace*{4ex}
+% Beispiel für Logo Industriepartner
+% \begin{tikzpicture}[remember picture,overlay,every node/.style={anchor=north east}]
+%   \node at (current page.north east) [xshift=-1cm, yshift=-0.5cm] {\includegraphics[width=4cm]{stoica-ionela-CoNsEK5iHug-unsplash.png}};
+%   % Photo by Stoica Ionela on Unsplash
+% \end{tikzpicture}
+
+\clearpage
+			
+%%---ABSTRACT----------------------------------------------------------------------------
+\selectlanguage{ngerman}				%ngerman or english
+\thispagestyle{empty}
+\include{sections/abstract}
+
+%%---TABLE OF CONTENTS-------------------------------------------------------------------	
+\selectlanguage{ngerman}				%ngerman or english
+\tableofcontents
+\clearpage
+
+\listoffigures
+\listoftables
+\cleardoublepage
+
+%%---TEXT--------------------------------------------------------------------------------
+\pagenumbering{arabic}
+\include{sections/muon}
+\include{sections/speedrunning}
+\include{sections/experimente}
+\include{sections/resultate}
+\include{sections/zusammenfassung}
+
+%%---BIBLIOGRAPHY------------------------------------------------------------------------
+{\sloppypar
+\printbibliography[heading=bibintoc, title=Quellenverzeichnis]
+}
+
+%%---APPENDIX----------------------------------------------------------------------------
+% \include{sections/eigenstaendigkeit}
+% \selectlanguage{english}				%ngerman or english
+% \include{sections/authenticity}
+% \selectlanguage{ngerman}				%ngerman or english
+% \include{sections/appendix}
+
+%%---NOTES for DEBUG---------------------------------------------------------------------
+%\newpage
+%\listoftodos[\section{Todo-Notes}]
+%\clearpage
+
+\end{document}

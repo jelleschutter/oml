@@ -1,0 +1,13 @@
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{Abbildungsverzeichnis}{iv}{section*.3}%
+\contentsline {section}{Tabellenverzeichnis}{iv}{section*.4}%
+\contentsline {section}{\numberline {1}Muon Optimizer}{1}{section.1}%
+\contentsline {section}{\numberline {2}NanoGPT Speedrunning}{3}{section.2}%
+\contentsline {section}{\numberline {3}Experimente an der FHNW}{5}{section.3}%
+\contentsline {section}{\numberline {4}Speedrunning auf dem FHNW Calculon}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}}{6}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Zusammenfassung}{7}{section.5}%
+\contentsline {section}{Quellenverzeichnis}{8}{section*.14}%
