@@ -2414,6 +2414,7 @@
     <bcf:citekey order="39" intorder="1">srivastava_muon_2024</bcf:citekey>
     <bcf:citekey order="40" intorder="1">srivastava_muon_2024</bcf:citekey>
     <bcf:citekey order="41" intorder="1">keller_modded_nanogpt_2024</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">keller_modded_nanogpt_2024</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
