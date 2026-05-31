@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.6)  31 MAY 2026 23:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.6)  31 MAY 2026 23:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jelle/Documents/FHNW/oml/report/fhnw_ht_eit_latex_template.tex
-(c:/Users/jelle/Documents/FHNW/oml/report/fhnw_ht_eit_latex_template.tex
+**c:/Users/jelle/Documents/FHNW/oml/report/oml_report.tex
+(c:/Users/jelle/Documents/FHNW/oml/report/oml_report.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
 (./fhnwreport.cls
@@ -1048,11 +1048,11 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 20.
  (c:/texlive/2026/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./fhnw_ht_eit_latex_template.aux
+) (./oml_report.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 9.
  (./sections/abstract.aux) (./sections/muon.aux) (./sections/speedrunning.aux) (./sections/experimente.aux) (./sections/resultate.aux) (./sections/zusammenfassung.aux))
-\openout1 = `fhnw_ht_eit_latex_template.aux'.
+\openout1 = `oml_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -1127,9 +1127,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 20.
- (./fhnw_ht_eit_latex_template.out) (./fhnw_ht_eit_latex_template.out)
+ (./oml_report.out) (./oml_report.out)
 \@outlinefile=\write5
-\openout5 = `fhnw_ht_eit_latex_template.out'.
+\openout5 = `oml_report.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1166,11 +1166,11 @@ File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `fhnw_ht_eit_latex_template.bcf'.
+\openout4 = `oml_report.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'fhnw_ht_eit_latex_template.bbl' found.
- (./fhnw_ht_eit_latex_template.bbl)
+Package biblatex Info: ... file 'oml_report.bbl' found.
+ (./oml_report.bbl)
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
 <./graphics/FHNW_HSI_EN.pdf, id=43, 297.19029pt x 28.4523pt>
@@ -1214,22 +1214,22 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )) [2
 
 
-] (./fhnw_ht_eit_latex_template.toc)
+] (./oml_report.toc)
 \tf@toc=\write6
-\openout6 = `fhnw_ht_eit_latex_template.toc'.
+\openout6 = `oml_report.toc'.
 
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 67.
  [3
 
 
-] (./fhnw_ht_eit_latex_template.lof)
+] (./oml_report.lof)
 \tf@lof=\write7
-\openout7 = `fhnw_ht_eit_latex_template.lof'.
+\openout7 = `oml_report.lof'.
 
- (./fhnw_ht_eit_latex_template.lot)
+ (./oml_report.lot)
 \tf@lot=\write8
-\openout8 = `fhnw_ht_eit_latex_template.lot'.
+\openout8 = `oml_report.lot'.
 
  [4
 
@@ -1289,27 +1289,27 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ] [8
 
 
-] (./fhnw_ht_eit_latex_template.aux (./sections/abstract.aux) (./sections/muon.aux) (./sections/speedrunning.aux) (./sections/experimente.aux) (./sections/resultate.aux) (./sections/zusammenfassung.aux))
+] (./oml_report.aux (./sections/abstract.aux) (./sections/muon.aux) (./sections/speedrunning.aux) (./sections/experimente.aux) (./sections/resultate.aux) (./sections/zusammenfassung.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
-Package rerunfilecheck Info: File `fhnw_ht_eit_latex_template.out' has not changed.
+Package rerunfilecheck Info: File `oml_report.out' has not changed.
 (rerunfilecheck)             Checksum: FBA97E4A91066C73627DCD754A3A5A39;1340.
-Package logreq Info: Writing requests to 'fhnw_ht_eit_latex_template.run.xml'.
-\openout1 = `fhnw_ht_eit_latex_template.run.xml'.
+Package logreq Info: Writing requests to 'oml_report.run.xml'.
+\openout1 = `oml_report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  39575 strings out of 467349
- 806210 string characters out of 5419863
- 1728868 words of memory out of 5000000
+ 805554 string characters out of 5419863
+ 1728788 words of memory out of 5000000
  67967 multiletter control sequences out of 15000+600000
  690153 words of font info for 72 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 104i,10n,111p,1244b,2738s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,10n,111p,1228b,2738s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on fhnw_ht_eit_latex_template.pdf (12 pages, 376144 bytes).
+Output written on oml_report.pdf (12 pages, 376193 bytes).
 PDF statistics:
  268 PDF objects out of 1000 (max. 8388607)
  218 compressed objects within 3 object streams

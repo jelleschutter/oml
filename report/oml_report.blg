@@ -1,0 +1,15 @@
+[2] Config.pm:328> INFO - This is Biber 2.21
+[3] Config.pm:331> INFO - Logfile is 'oml_report.blg'
+[428] biber-MSWIN64:342> INFO - === 
+[526] Biber.pm:421> INFO - Reading 'oml_report.bcf'
+[806] Biber.pm:1002> INFO - Found 3 citekeys in bib section 0
+[840] Biber.pm:4487> INFO - Processing section 0
+[868] Biber.pm:4678> INFO - Looking for bibtex file 'literature/quellen.bib' for section 0
+[977] bibtex.pm:1713> INFO - LaTeX decoding ...
+[991] bibtex.pm:1519> INFO - Found BibTeX data source 'literature/quellen.bib'
+[1148] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1149] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1149] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[1149] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
+[1166] bbl.pm:676> INFO - Writing 'oml_report.bbl' with encoding 'UTF-8'
+[1173] bbl.pm:779> INFO - Output to oml_report.bbl

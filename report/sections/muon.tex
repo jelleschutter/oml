@@ -33,7 +33,7 @@ mit ursprünglich den Koeffizienten $(a, b, c) = (3.4445,\; -4.7750,\; 2.0315)$.
 Nach typischerweise 5 Schritten konvergiert $X_k$ gegen $UV^\top$.
 Gemäss Keller \cite{keller_muon_2024} konnte dies effizient und stabil in \texttt{bfloat16} durchgeführt werden, was schlussendlich ein Vorteil gegenüber anderen Orthogonalisierungsverfahren war.
 
-Übrigens werden die Koeffizienten $a, b, c$ nicht mehr fix verwendet, sondern werden in jedem Schritt so optimiert, dass die Konvergenz beschleunigt wird \cite{srivastava_muon_2024}.
+In neueren Versionen werden die Koeffizienten $a, b, c$ beim Speedrunning nicht mehr verwendet, stattdessen werden die Koeffizienten bei jedem Schritt neu berechnet um die Konvergenz weiter zu beschleunigen \cite{srivastava_muon_2024}.
 
 \subsection*{Warum Orthogonalisierung hilft}
 
@@ -46,4 +46,3 @@ Dadurch erhalten auch die schwachen, aber durchaus auch nützlichen Richtungen e
 \subsection*{Rechenaufwand vs. Nutzen}
 
 Der Mehraufwand durch die Newton-Schulz-Iteration gegenüber dem Standard SGD-Momentum ohne Orthogonalisierung ist klein. Die zusätzlichen Matrixmultiplikationen können effizient auf der GPU durchgeführt werden \cite{keller_muon_2024}. Für den NanoGPT-Speedrun mit $768$ Dimensionen und einer Batch-Size von $524\,288$ ergaben Tests nur einen $\mathbf{0.7\%}$ Overhead während die Anzahl der benötigten Iterationen signifikant reduziert wurde \cite{keller_muon_2024}.
-

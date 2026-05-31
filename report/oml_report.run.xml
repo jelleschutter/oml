@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>fhnw_ht_eit_latex_template.bcf</file>
+      <file>oml_report.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>fhnw_ht_eit_latex_template.bbl</file>
+      <file>oml_report.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -69,19 +69,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>fhnw_ht_eit_latex_template</infile>
+      <infile>oml_report</infile>
     </cmdline>
     <input>
-      <file>fhnw_ht_eit_latex_template.bcf</file>
+      <file>oml_report.bcf</file>
     </input>
     <output>
-      <file>fhnw_ht_eit_latex_template.bbl</file>
+      <file>oml_report.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>fhnw_ht_eit_latex_template.bbl</file>
+      <file>oml_report.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>fhnw_ht_eit_latex_template.bcf</file>
+      <file>oml_report.bcf</file>
     </requires>
     <requires type="editable">
       <file>literature/quellen.bib</file>
